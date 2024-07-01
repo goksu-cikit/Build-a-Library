@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Catalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Media Catalog</h1>
+    <div class="form-container">
+      <div class="form-group">
+        <label for="media-type">Select Media Type:</label>
+        <select id="media-type">
+          <option value="book">Book</option>
+          <option value="cd">CD</option>
+          <option value="movie">Movie</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title">
+      </div>
+      <div id="additional-fields"></div>
+      <div class="form-group">
+        <label for="rating">Ratings:</label>
+        <select id="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button id="add-rating">Add Rating</button>
+      </div>
+      <div class="form-group">
+        <label>Checked Out?</label>
+        <input type="radio" id="checked-out-yes" name="checked-out" value="yes"> Yes
+        <input type="radio" id="checked-out-no" name="checked-out" value="no" checked> No
+      </div>
+      <button id="add-item">Add Item</button>
+    </div>
+    <div class="catalog">
+      <h2>Catalog Items</h2>
+      <ul id="catalog-list"></ul>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
